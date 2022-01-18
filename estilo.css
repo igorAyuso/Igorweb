@@ -1,0 +1,283 @@
+* {
+  font-family: "lato";
+}
+
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+.int {
+  margin-left: 10px;
+  width: 800px;
+}
+
+/*  Primer intento Menu  */
+.prueba {
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.prueba a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 100px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.prueba a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.galeria {
+  text-align: center;
+}
+/* Provisorio falta aprender algo para ponerlo donde quiero */
+.ubicacion {
+  position: absolute;
+  top: 250px;
+  right: 100px;
+}
+
+/* Titulo  */
+.pruebaTitulo h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #222;
+  letter-spacing: 1px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+.pruebaTitulo h1 span {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #444;
+  word-spacing: 1px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+.pruebaTitulo h1 span:after,
+.pruebaTitulo h1 span:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  height: 5px;
+  background-color: #f8f8f8;
+}
+
+/* Borde del formulario */
+.formulario {
+  width: 25%;
+  border: 5px solid rgb(0, 0, 0);
+}
+
+/* Para aplicarle borde a las imagenes */
+
+.img {
+  border: 8px solid rgb(225, 248, 219);
+  width: 800px;
+  height: 600px;
+}
+
+/*  Boton para contactarme por whatsapp */
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
+}
+
+/* FLEX BOX */
+
+.alineado {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* footer */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+.footer-distributed {
+  background: rgb(102, 102, 102);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  font: bold 14px sans-serif;
+  text-align: left;
+  padding: 10px 40px 40px;
+  overflow: hidden;
+}
+
+/* Nombre */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Roboto", cursive;
+  margin: 0px 0px 0px;
+}
+
+.footer-distributed h3 span {
+  color: #96ecb0;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0px 0px 5px;
+}
+
+/* Footer redes */
+
+.footer-distributed .footer-icons {
+  margin-top: 0px;
+  float: left;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: rgb(22, 22, 24);
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.iconos {
+  display: grid;
+
+  grid-auto-flow: column;
+  grid-column-gap: 100px;
+  width: 100px;
+  height: 100px;
+
+  background-color: rgb(22, 22, 24);
+  border-radius: 5px;
+
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 80px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+/* grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/* formulario de contacto */
+.form {
+  width: 340px;
+  height: 540px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.contacto {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+input:focus {
+  border-bottom: 2px solid #78788c;
+}
+p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: #78788c;
+  color: #fff;
+}
+.contacto2 {
+  content: "Hi";
+  position: absolute;
+  bottom: -15px;
+  right: -200px;
+  background: #50505a;
+  color: #fff;
+  width: 350px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+}
+span {
+  margin: 0 5px 0 15px;
+}
