@@ -6,12 +6,24 @@ body {
   background-color: rgb(241, 241, 241);
 }
 
+@media (min-width: 1024px) {
 .int {
   margin-left: 10px;
   width: 800px;
 }
+}
+@media (max-width: 1023px) {
+  .int {
+    margin-left: 10px;
+    width: 400px;
+    
+  }
+}
+
 
 /*  Primer intento Menu  */
+
+@media (min-width: 1024px) {
 .prueba {
   overflow: hidden;
   background-color: #333;
@@ -32,16 +44,42 @@ body {
   background-color: #ddd;
   color: black;
 }
-
+}
 .galeria {
   text-align: center;
 }
-/* Provisorio falta aprender algo para ponerlo donde quiero */
-.ubicacion {
-  position: absolute;
-  top: 250px;
-  right: 100px;
-}
+/* para tablet */
+@media (max-width: 1023px) {
+  .prueba {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .prueba a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  .prueba a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  }
+  .galeria {
+    text-align: center;
+  }
+  
+  
+  /*  */
+
+
+
 
 /* Titulo  */
 .pruebaTitulo h1 {
