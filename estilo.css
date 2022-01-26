@@ -144,15 +144,64 @@ body {
 
 /* Para aplicarle borde a las imagenes */
 
-.img {
+#hab {
   border: 8px solid rgb(225, 248, 219);
   width: 800px;
   height: 600px;
+transition: width 2s, height 2s ;
+grid-area: hab;
+margin: 10px 10px 10px 10px;
 }
 
-.imgindex {
-  max-width: 100px;
+#coc {
+  border: 8px solid rgb(225, 248, 219);
+  width: 800px;
+  height: 600px;
+transition: width 2s, height 2s ;
+grid-area: coc;
+margin: 10px 10px 10px 10px;
 }
+
+#ban {
+  border: 8px solid rgb(225, 248, 219);
+  width: 800px;
+  height: 600px;
+transition: width 2s, height 2s ;
+grid-area: ban;
+margin: 10px 10px 10px 10px;
+}
+
+#living {
+  border: 8px solid rgb(225, 248, 219);
+  width: 800px;
+  height: 600px;
+transition: width 2s, height 2s ;
+grid-area: living;
+margin: 10px 10px 10px 10px;
+}
+#bal {
+  border: 8px solid rgb(225, 248, 219);
+  width: 800px;
+  height: 600px;
+transition: width 2s, height 2s ;
+grid-area: bal;
+margin: 10px 10px 10px 10px;
+}
+#ext {
+  border: 8px solid rgb(225, 248, 219);
+  width: 800px;
+  height: 600px;
+transition: width 2s, height 2s ;
+grid-area: ext;
+margin: 10px 10px 10px 10px;
+}
+
+.img:hover {
+  width: 1000px;
+  height: 800px;
+}
+
+
 
 /*  Boton para contactarme por whatsapp */
 
@@ -174,12 +223,9 @@ body {
   margin-top: 13px;
 }
 
-/* FLEX BOX */
-
-.alineado {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.whatsapp:hover {
+  background-color: #ddd;
+  color:#25d366;
 }
 
 /* footer */
@@ -240,9 +286,37 @@ body {
   margin-bottom: 5px;
 }
 
-.iconos {
+#fb {
   display: grid;
 
+  grid-auto-flow: column;
+  grid-column-gap: 100px;
+  width: 100px;
+  height: 100px;
+grid-area: fb;
+  background-color: rgb(22, 22, 24);
+  border-radius: 5px;
+
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 80px;
+  justify-self: end;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  transition: all;
+
+}
+
+#fb:hover {
+  background-color: #ddd;
+  ;
+}
+#ig {
+  display: grid;
+grid-area: ig;
   grid-auto-flow: column;
   grid-column-gap: 100px;
   width: 100px;
@@ -259,9 +333,13 @@ body {
   margin-right: 3px;
   margin-bottom: 5px;
   margin-top: 10px;
+  transition: all;
 }
 
-/* grid */
+#ig:hover {
+  background-color: #ddd;
+  ;
+}
 
 
 /* Grid Index */
@@ -347,10 +425,36 @@ body {
         grid-template-columns: 50% 50%;
       }
     }
+   
     
 
+    /* Grid Multimedia */
+
+    .GridMultimedia {
+      display: grid;
+      grid-template-areas:
+    /* estructura */
+        "header header"
+        "titulo titulo"
+        "hab living"
+        "coc ban"
+        "bal ext"
+        "texto texto"
+        "fb ig"
+        "footer footer";
+   
+    }
   /* Nombrar las areas */
 
+#titulo{
+  grid-area: titulo;
+  text-align: center;
+  margin-right: 100px;
+} 
+#texto {
+  grid-area: texto;
+  text-align: center;
+}
   header {
     grid-area: header;
   }
