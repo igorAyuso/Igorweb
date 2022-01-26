@@ -196,10 +196,34 @@ grid-area: ext;
 margin: 10px 10px 10px 10px;
 }
 
-.img:hover {
+#bal:hover {
   width: 1000px;
   height: 800px;
 }
+#ext:hover {
+  width: 1000px;
+  height: 800px;
+}
+#living:hover {
+  width: 1000px;
+  height: 800px;
+}
+#ban:hover {
+  width: 1000px;
+  height: 800px;
+}
+#coc:hover {
+  width: 1000px;
+  height: 800px;
+}
+#hab:hover {
+  width: 1000px;
+  height: 800px;
+}
+
+
+
+
 
 
 
