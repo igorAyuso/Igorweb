@@ -136,11 +136,7 @@ body {
   background-color: #f8f8f8;
 }
 
-/* Borde del formulario */
-.formulario {
-  width: 25%;
-  border: 5px solid rgb(0, 0, 0);
-}
+
 
 /* Para aplicarle borde a las imagenes */
 
@@ -366,92 +362,6 @@ grid-area: ig;
 }
 
 
-/* Grid Index */
-@media (min-width: 1024px) {
-  .GridAreas {
-    display: grid;
-    grid-template-areas:
-  /* estructura */
-      "header header"
-      "resumen resumen"
-      "img ubi"
-      "footer footer";
-    grid-template-columns: 50% 50%;
-  }
-
-  @media (min-width: 480px) and (max-width: 1024px) {
-    .GridAreas {
-      display: grid;
-      grid-template-areas:
-    /* estructura */
-        "header"
-        "resumen"
-        "img"
-        "ubi"
-        "footer";
-      grid-template-columns: 50% 50%;
-    }
-  }
-
-  @media (max-width: 479px) {
-    .GridAreas {
-      display: grid;
-      grid-template-areas:
-    /* estructura */
-        "header"
-        "resumen"
-        "img"
-        "ubi"
-        "footer";
-      grid-template-columns: 50% 50%;
-    }
-  }
-
-  /* Grid Caracteristicas */
-  @media (min-width: 1024px) {
-    .GridCaracteristicas {
-      display: grid;
-      grid-template-areas:
-    /* estructura */
-        "header header"
-        "tres dos"
-        "incluye ubi"
-        "footer footer";
-      grid-template-columns: 50% 50%;
-    }
-  
-    @media (min-width: 480px) and (max-width: 1024px) {
-      .GridCaracteristicas {
-        display: grid;
-        grid-template-areas:
-      /* estructura */
-          "header"
-          "tres"
-          "dos"
-          "incluye"
-          "ubi"
-          "footer";
-        grid-template-columns: 50% 50%;
-      }
-    }
-  
-    @media (max-width: 479px) {
-      .GridCaracteristicas {
-        display: grid;
-        grid-template-areas:
-      /* estructura */
-      "header"
-      "tres"
-      "dos"
-      "incluye"
-      "ubi"
-      "footer";
-        grid-template-columns: 50% 50%;
-      }
-    }
-   
-    
-
     /* Grid Multimedia */
 
     .GridMultimedia {
@@ -505,32 +415,9 @@ grid-area: ig;
     grid-area: footer;
   }
 
-  #resumen {
-    grid-area: resumen;
-  }
 
-  #ubi {
-    grid-area: ubi;
-    align-self: end;
-    justify-self: end;
-    margin-left: 100px;
-    margin-bottom: 20px;
-  }
+ 
 
-  #img {
-    grid-area: img;
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
-    margin-bottom: 20px;
-  }
-#tresamb
-{
-  grid-area: tres;
-}
-#dosamb {
-  grid-area: dos;
-}
 
 #incluye { grid-area: incluye;}
   /* formulario de contacto */
@@ -609,6 +496,5 @@ grid-area: ig;
   }
 
   
-}
 
-}
+

@@ -1,0 +1,25 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass scss/origen.scss css/destino.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorAyuso/Igorweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igorAyuso/Igorweb/issues"
+  },
+  "homepage": "https://github.com/igorAyuso/Igorweb#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sass": "^1.49.7"
+  }
+}

@@ -1,0 +1,113 @@
+
+/* footer */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+.footer-distributed {
+  background: rgb(102, 102, 102);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  font: bold 14px sans-serif;
+  text-align: left;
+  padding: 10px 40px 40px;
+  overflow: hidden;
+}
+
+/* Nombre */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Roboto", cursive;
+  margin: 0px 0px 0px;
+}
+
+.footer-distributed h3 span {
+  color: #96ecb0;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0px 0px 5px;
+}
+
+/* Footer redes */
+
+.footer-distributed .footer-icons {
+  margin-top: 0px;
+  float: left;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: rgb(22, 22, 24);
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+#fb {
+  display: grid;
+
+  grid-auto-flow: column;
+  grid-column-gap: 100px;
+  width: 100px;
+  height: 100px;
+grid-area: fb;
+  background-color: rgb(22, 22, 24);
+  border-radius: 5px;
+
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 80px;
+  justify-self: end;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  transition: all;
+
+}
+
+#fb:hover {
+  background-color: #ddd;
+  ;
+}
+#ig {
+  display: grid;
+grid-area: ig;
+  grid-auto-flow: column;
+  grid-column-gap: 100px;
+  width: 100px;
+  height: 100px;
+
+  background-color: rgb(22, 22, 24);
+  border-radius: 5px;
+
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 80px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  transition: all;
+}
+
+#ig:hover {
+  background-color: #ddd;
+  ;
+}

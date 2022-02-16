@@ -1,0 +1,133 @@
+/* Para aplicarle borde a las imagenes */
+
+
+#hab {
+    border: 8px solid rgb(225, 248, 219);
+    width: 800px;
+    height: 600px;
+  transition: width 2s, height 2s ;
+  grid-area: hab;
+  margin: 10px 10px 10px 10px;
+  }
+  
+  #coc {
+    border: 8px solid rgb(225, 248, 219);
+    width: 800px;
+    height: 600px;
+  transition: width 2s, height 2s ;
+  grid-area: coc;
+  margin: 10px 10px 10px 10px;
+  }
+  
+  #ban {
+    border: 8px solid rgb(225, 248, 219);
+    width: 800px;
+    height: 600px;
+  transition: width 2s, height 2s ;
+  grid-area: ban;
+  margin: 10px 10px 10px 10px;
+  }
+  
+  #living {
+    border: 8px solid rgb(225, 248, 219);
+    width: 800px;
+    height: 600px;
+  transition: width 2s, height 2s ;
+  grid-area: living;
+  margin: 10px 10px 10px 10px;
+  }
+  #bal {
+    border: 8px solid rgb(225, 248, 219);
+    width: 800px;
+    height: 600px;
+  transition: width 2s, height 2s ;
+  grid-area: bal;
+  margin: 10px 10px 10px 10px;
+  }
+  #ext {
+    border: 8px solid rgb(225, 248, 219);
+    width: 800px;
+    height: 600px;
+  transition: width 2s, height 2s ;
+  grid-area: ext;
+  margin: 10px 10px 10px 10px;
+  }
+  
+  #bal:hover {
+    width: 1000px;
+    height: 800px;
+  }
+  #ext:hover {
+    width: 1000px;
+    height: 800px;
+  }
+  #living:hover {
+    width: 1000px;
+    height: 800px;
+  }
+  #ban:hover {
+    width: 1000px;
+    height: 800px;
+  }
+  #coc:hover {
+    width: 1000px;
+    height: 800px;
+  }
+  #hab:hover {
+    width: 1000px;
+    height: 800px;
+  }
+
+  
+  #titulo{
+    grid-area: titulo;
+    text-align: center;
+    margin-right: 100px;
+  } 
+  #texto {
+    grid-area: texto;
+    text-align: center;
+  }
+    header {
+      grid-area: header;
+    }
+    footer {
+      grid-area: footer;
+    }
+
+  
+    /* Grid Multimedia */
+
+    .GridMultimedia {
+        display: grid;
+        grid-template-areas:
+      /* estructura */
+          "header header"
+          "titulo titulo"
+          "hab living"
+          "coc ban"
+          "bal ext"
+          "texto texto"
+          "fb ig"
+          "footer footer";
+     
+      }
+  
+      .container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 75%; /* 4:3 Aspect Ratio */
+      }
+      
+      .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+  
