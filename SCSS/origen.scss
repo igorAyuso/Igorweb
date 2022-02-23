@@ -4,4 +4,35 @@
 @import "whatsapp.scss" ;
 @import "footer.scss" ;
 @import "formulario.scss" ;
-@import "galeria.scss" ;
+
+.mbsc-datepicker .md-book-rental-bg-off.vacation-check-in.mbsc-ltr {
+    background: linear-gradient( to left top, #ffbaba80 50%, #b2f1c080 50%) no-repeat;
+}
+
+.mbsc-datepicker .md-book-rental-bg-pre.vacation-check-in.mbsc-ltr {
+    background: linear-gradient( to left top, #ffbaba80 50%, #a3cdff80 50%) no-repeat;
+}
+
+.mbsc-datepicker .md-book-rental-bg-in.vacation-check-in.mbsc-ltr {
+    background: linear-gradient( to left top, #ffbaba80 50%, #f7f7bb80 50%) no-repeat;
+}
+
+.mbsc-datepicker .md-book-rental-bg-off.vacation-check-out.mbsc-ltr {
+    background: linear-gradient( to left top, #b2f1c080 50%, #ffbaba80 50%) no-repeat;
+}
+
+.mbsc-datepicker .md-book-rental-bg-pre.vacation-check-out.mbsc-ltr {
+    background: linear-gradient( to left top, #a3cdff80 50%, #ffbaba80 50%) no-repeat;
+}
+
+.mbsc-datepicker .md-book-rental-bg-in.vacation-check-out.mbsc-ltr {
+    background: linear-gradient( to left top, #f7f7bb80 50%, #ffbaba80 50%) no-repeat;
+}
+
+.mbsc-datepicker .md-book-rental-bg-off.vacation-check-in.mbsc-rtl {
+    background: linear-gradient( to right bottom, #ffbaba80 50%, #b2f1c080 50%) no-repeat;
+}
+
+.mbsc-datepicker .md-book-rental-bg-pre.vacation-check-in.mbsc-rtl {
+    background: linear-gradient( to right bottom, #ffbaba80 50%, #a3cdff80 50%) no-repeat;
+}

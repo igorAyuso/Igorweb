@@ -80,32 +80,15 @@ grid-area: fb;
   transition: all;
 
 }
+#ig {
+  @extend #fb
+  }
 
 #fb:hover {
   background-color: #ddd;
   ;
 }
-#ig {
-  display: grid;
-grid-area: ig;
-  grid-auto-flow: column;
-  grid-column-gap: 100px;
-  width: 100px;
-  height: 100px;
 
-  background-color: rgb(22, 22, 24);
-  border-radius: 5px;
-
-  font-size: 50px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 80px;
-
-  margin-right: 3px;
-  margin-bottom: 5px;
-  margin-top: 10px;
-  transition: all;
-}
 
 #ig:hover {
   background-color: #ddd;

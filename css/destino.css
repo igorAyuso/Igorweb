@@ -129,7 +129,7 @@ body {
     text-align: center;
     padding: 1rem 1rem;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .prueba a:hover {
@@ -217,7 +217,7 @@ body {
   margin-bottom: 5px;
 }
 
-#fb {
+#fb, #ig {
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 100px;
@@ -237,27 +237,8 @@ body {
   transition: all;
 }
 
-#fb:hover {
+#fb:hover, #ig:hover {
   background-color: #ddd;
-}
-
-#ig {
-  display: grid;
-  grid-area: ig;
-  grid-auto-flow: column;
-  grid-column-gap: 100px;
-  width: 100px;
-  height: 100px;
-  background-color: #161618;
-  border-radius: 5px;
-  font-size: 50px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 80px;
-  margin-right: 3px;
-  margin-bottom: 5px;
-  margin-top: 10px;
-  transition: all;
 }
 
 #ig:hover {
@@ -347,133 +328,36 @@ span {
   margin: 0 5px 0 15px;
 }
 
-/* Para aplicarle borde a las imagenes */
-#hab {
-  border: 8px solid #e1f8db;
-  width: 800px;
-  height: 600px;
-  transition: width 2s, height 2s;
-  grid-area: hab;
-  margin: 10px 10px 10px 10px;
+.mbsc-datepicker .md-book-rental-bg-off.vacation-check-in.mbsc-ltr {
+  background: linear-gradient(to left top, #ffbaba80 50%, #b2f1c080 50%) no-repeat;
 }
 
-#coc {
-  border: 8px solid #e1f8db;
-  width: 800px;
-  height: 600px;
-  transition: width 2s, height 2s;
-  grid-area: coc;
-  margin: 10px 10px 10px 10px;
+.mbsc-datepicker .md-book-rental-bg-pre.vacation-check-in.mbsc-ltr {
+  background: linear-gradient(to left top, #ffbaba80 50%, #a3cdff80 50%) no-repeat;
 }
 
-#ban {
-  border: 8px solid #e1f8db;
-  width: 800px;
-  height: 600px;
-  transition: width 2s, height 2s;
-  grid-area: ban;
-  margin: 10px 10px 10px 10px;
+.mbsc-datepicker .md-book-rental-bg-in.vacation-check-in.mbsc-ltr {
+  background: linear-gradient(to left top, #ffbaba80 50%, #f7f7bb80 50%) no-repeat;
 }
 
-#living {
-  border: 8px solid #e1f8db;
-  width: 800px;
-  height: 600px;
-  transition: width 2s, height 2s;
-  grid-area: living;
-  margin: 10px 10px 10px 10px;
+.mbsc-datepicker .md-book-rental-bg-off.vacation-check-out.mbsc-ltr {
+  background: linear-gradient(to left top, #b2f1c080 50%, #ffbaba80 50%) no-repeat;
 }
 
-#bal {
-  border: 8px solid #e1f8db;
-  width: 800px;
-  height: 600px;
-  transition: width 2s, height 2s;
-  grid-area: bal;
-  margin: 10px 10px 10px 10px;
+.mbsc-datepicker .md-book-rental-bg-pre.vacation-check-out.mbsc-ltr {
+  background: linear-gradient(to left top, #a3cdff80 50%, #ffbaba80 50%) no-repeat;
 }
 
-#ext {
-  border: 8px solid #e1f8db;
-  width: 800px;
-  height: 600px;
-  transition: width 2s, height 2s;
-  grid-area: ext;
-  margin: 10px 10px 10px 10px;
+.mbsc-datepicker .md-book-rental-bg-in.vacation-check-out.mbsc-ltr {
+  background: linear-gradient(to left top, #f7f7bb80 50%, #ffbaba80 50%) no-repeat;
 }
 
-#bal:hover {
-  width: 1000px;
-  height: 800px;
+.mbsc-datepicker .md-book-rental-bg-off.vacation-check-in.mbsc-rtl {
+  background: linear-gradient(to right bottom, #ffbaba80 50%, #b2f1c080 50%) no-repeat;
 }
 
-#ext:hover {
-  width: 1000px;
-  height: 800px;
-}
-
-#living:hover {
-  width: 1000px;
-  height: 800px;
-}
-
-#ban:hover {
-  width: 1000px;
-  height: 800px;
-}
-
-#coc:hover {
-  width: 1000px;
-  height: 800px;
-}
-
-#hab:hover {
-  width: 1000px;
-  height: 800px;
-}
-
-#titulo {
-  grid-area: titulo;
-  text-align: center;
-  margin-right: 100px;
-}
-
-#texto {
-  grid-area: texto;
-  text-align: center;
-}
-
-header {
-  grid-area: header;
-}
-
-footer {
-  grid-area: footer;
-}
-
-/* Grid Multimedia */
-.GridMultimedia {
-  display: grid;
-  grid-template-areas: "header header" "titulo titulo" "hab living" "coc ban" "bal ext" "texto texto" "fb ig" "footer footer";
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 75%;
-  /* 4:3 Aspect Ratio */
-}
-
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
+.mbsc-datepicker .md-book-rental-bg-pre.vacation-check-in.mbsc-rtl {
+  background: linear-gradient(to right bottom, #ffbaba80 50%, #a3cdff80 50%) no-repeat;
 }
 
 /*# sourceMappingURL=destino.css.map */

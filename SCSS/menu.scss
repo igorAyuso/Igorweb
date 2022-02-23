@@ -1,4 +1,13 @@
 /* desktop */
+@mixin menur ($float,$color,$text-align,$padding,$text-decoration,$font-size) { 
+  float: $float;
+  color: $color;
+  text-align: $text-align;
+  padding: $padding;
+  text-decoration: $text-decoration;
+  font-size: $font-size;
+}
+
 @media (min-width: 1024px) {
     .prueba {
       overflow: hidden;
@@ -8,12 +17,8 @@
       justify-content: center;
     }
     .prueba a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 100px;
-      text-decoration: none;
-      font-size: 17px;
+      @include menur(left,#f2f2f2,center,14px 100px,none,17px)
+   
     }
   
     .prueba a:hover {
@@ -34,12 +39,8 @@
       justify-content: center;
     }
     .prueba a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 1rem 1rem;
-      text-decoration: none;
-      font-size: 12px;
+      @include menur(left,#f2f2f2,center,1rem 1rem,none,12px)
+
     }
   
     .prueba a:hover {
@@ -61,12 +62,7 @@
       justify-content: center;
     }
     .prueba a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 1rem 1rem;
-      text-decoration: none;
-      font-size: 12px;
+      @include menur(left,#f2f2f2,center,1rem 1rem,none,10px)
     }
   
     .prueba a:hover {

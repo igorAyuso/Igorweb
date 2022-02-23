@@ -21,5 +21,8 @@
   "devDependencies": {
     "nodemon": "^2.0.15",
     "sass": "^1.49.7"
+  },
+  "dependencies": {
+    "vue-hotel-datepicker": "^4.5.1"
   }
 }
